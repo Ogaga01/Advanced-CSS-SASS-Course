@@ -60,20 +60,20 @@
     font-size: $default-font-size;
     display: inline-block;
     text-decoration: none;
-    border-bottom: .1rem solid $color-primary;
-    padding: .3rem;
-    transition: all .2s;
+    border-bottom: 0.1rem solid $color-primary;
+    padding: 0.3rem;
+    transition: all 0.2s;
   }
 
   &:hover {
     background-color: $color-primary;
     color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, .15);
-    transform: translateY(-.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-0.2rem);
   }
 
   &:active {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-    transform: translateY(0rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
   }
 }

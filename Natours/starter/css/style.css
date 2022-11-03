@@ -73,8 +73,8 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -148,8 +148,8 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 0.1rem solid #55c57a;
-  padding: .3rem;
-  transition: all .2s; }
+  padding: 0.3rem;
+  transition: all 0.2s; }
 
 .btn-text:hover {
   background-color: #55c57a;
@@ -159,7 +159,7 @@ body {
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0rem); }
+  transform: translateY(0); }
 
 .composition {
   position: relative; }
@@ -168,7 +168,7 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     z-index: 10;
-    transition: all .2s;
+    transition: all 0.2s;
     outline-offset: 2rem; }
     .composition__photo--p1 {
       left: 0;
@@ -221,7 +221,7 @@ body {
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem)/2); }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * (6rem)) / 3); }
   .row .col-2-of-3 {
