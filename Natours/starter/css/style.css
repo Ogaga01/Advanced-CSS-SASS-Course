@@ -259,4 +259,6 @@ body {
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c5), url(../img/nat-4.jpg);
-  background-size: cover; }
+  background-size: cover;
+  clip-path: polygon(0 10vh, 100% 0, 100% 90vh, 0 100%);
+  margin-top: -20vh; }
