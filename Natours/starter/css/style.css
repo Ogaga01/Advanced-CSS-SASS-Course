@@ -187,26 +187,7 @@ body {
   .compositionhover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c5), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
+@im @import "./layout/header";
 .row {
   max-width: 114rem;
   margin: 0 auto; }
