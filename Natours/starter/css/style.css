@@ -342,7 +342,8 @@ body {
   border-bottom: 0.3rem solid transparent;
   width: 90%;
   display: block;
-  color: inherit; }
+  color: inherit;
+  transition: all .3s; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
   .form__input:focus {

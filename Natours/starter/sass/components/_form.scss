@@ -14,6 +14,7 @@
     width: 90%;
     display: block;
     color: inherit;
+    transition: all .3s;
 
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
