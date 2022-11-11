@@ -423,17 +423,34 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    color: #777;
+    line-height: 1;
+    transition: all .2s; }
+    .popup__close:link:hover, .popup__close:visited:hover {
+      color: #55c57a; }
   .popup__content {
     width: 75%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.5);
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     display: table;
     border-radius: .3rem;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s; }
   .popup__left {
     width: 33.3333%;
     display: table-cell;
