@@ -6,9 +6,14 @@
     position: fixed;
     z-index: 999;
     background-color: rgba($color-black, .8);
-    
+    transition: all .3s;
     opacity: 0;
     visibility: hidden;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
 
     &__content {
         width: 75%;

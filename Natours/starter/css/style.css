@@ -417,8 +417,12 @@ body {
   position: fixed;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: all .3s;
   opacity: 0;
   visibility: hidden; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
   .popup__content {
     width: 75%;
     position: absolute;
