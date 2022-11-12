@@ -4,7 +4,16 @@
 
   &:not(:last-child) {
     margin-bottom: $grid-vertical-gutter;
+
+    @include respond(tab-port) {
+      margin-bottom: $grid-vertical-gutter-small;
+    }
   }
+
+  @include respond(tab-port) {
+      max-width: 50rem;
+      padding: 0 3rem;
+    }
 
   @include clearfix;
 
@@ -13,7 +22,16 @@
 
     &:not(:last-child) {
       margin-right: $grid-horizontal-gutter;
+
+      @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: $grid-vertical-gutter-small;
     }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    } 
   }
 
   .col-1-of-2 {
