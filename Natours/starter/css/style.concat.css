@@ -646,6 +646,10 @@ body {
     body {
       padding: 0; } }
 
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
