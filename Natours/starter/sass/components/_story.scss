@@ -15,7 +15,7 @@
     padding-left: 7rem;
   }
 
-  @include respond(phone){
+  @include respond(phone) {
     transform: skewX(0);
   }
 

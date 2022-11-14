@@ -166,8 +166,8 @@
   }
 
   // @include respond(tab-port) {
-    @media only screen and (max-width: 52.25em), 
-           only screen and (hover: none) {
+  @media only screen and (max-width: 52.25em),
+    only screen and (hover: none) {
     position: relative;
     height: auto;
     border-radius: 0.3rem;
@@ -209,5 +209,5 @@
     &__price-value {
       font-size: 4rem;
     }
-    }
-} 
+  }
+}

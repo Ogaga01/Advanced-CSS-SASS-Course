@@ -20,8 +20,8 @@
     color: transparent;
 
     @include respond(tab-port) {
-    margin-bottom: 0;
-  }
+      margin-bottom: 0;
+    }
   }
 
   &:hover {

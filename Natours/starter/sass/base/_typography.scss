@@ -27,7 +27,7 @@
     animation-duration: 2s;
 
     @include respond(phone) {
-      letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
     }
   }
 }
