@@ -186,7 +186,7 @@
 }
 
 ////////////////////////////////////////
-/// GALLERY
+/// OVERVIEW
 .overview {
     display: flex;
     align-items: center;
@@ -247,7 +247,7 @@
 }
 
 ////////////////////////////////////////
-/// GALLERY
+/// BUTTON
 .btn-inline {
     border: none;
     color: var(--color-primary);
@@ -258,9 +258,18 @@
     background-color: transparent;
     cursor: pointer;
     transition: all .2s;
+    
+    & span {
+        margin-left: 0.3rem;
+        transition: margin-left .2s;
+    }
 
     &:hover {
         color: var(--color-grey-dark-1);
+
+        span {
+            margin-left: 0.8rem;
+        }
     }
 
     &:focus {
@@ -349,5 +358,70 @@
         &:not(:first-child) {
             margin-left: -1.5rem;
         }
+    }
+}
+
+////////////////////////////////////////
+/// REVIEW
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 5;
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+
+    &__user-box {
+        flex: 1;
+        margin: auto;
+        margin-left: 1.5rem;
+    }
+
+    &__user-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+    }
+
+    &__user-date {
+        color: var(--color-grey-dark-3);
+        font-size: 1rem;
+    }
+
+    &__rating {
+        color: var(--color-primary);
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -2.75rem;
+        left: -1rem;
+        font-size: 20rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        line-height: 1;
+        z-index: 1;
     }
 }
