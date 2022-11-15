@@ -1,0 +1,96 @@
+////////////////////////////////////////
+/// LOGO
+.logo {
+    height: 3.25rem;
+    margin-left: 3rem;
+}
+
+////////////////////////////////////////
+/// SEARCH
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        background-color: var(--color-grey-light-2);
+        color: inherit;
+        border: none;
+        padding: 0.7rem;
+        border-radius: 10rem;
+        width: 90%;
+        margin-right: -3.25rem;
+        transition: all .4s;
+
+        &:focus {
+            width: 100%;
+            outline: none;
+            background-color: var(--color-grey-light-3);
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
+
+    }
+
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3);
+
+    }
+
+    &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-dark-3);
+    }
+}
+
+////////////////////////////////////////
+/// USER NAV
+.user-nav {
+    display: flex;
+    align-items: center;
+
+    & > * {
+        
+    }
+
+    &__icon-box {
+
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &__notification {
+
+    }
+
+    &__user {
+
+    }
+
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+        
+    }
+}
