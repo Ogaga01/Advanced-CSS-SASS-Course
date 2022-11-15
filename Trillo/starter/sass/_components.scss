@@ -190,7 +190,7 @@
 .overview {
     display: flex;
     align-items: center;
-    border-bottom:.1rem solid var(--color-grey-light-2);
+    border-bottom:var(--line);
 
     &__heading {
         font-weight: 300;
